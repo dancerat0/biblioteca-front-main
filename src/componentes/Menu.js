@@ -56,6 +56,11 @@ export default function Menu() {
                                             Editora
                                         </a>
                                     </li>
+                                    <li>
+                                        <a className="dropdown-item" href="/listausuario">
+                                            Usuario
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 

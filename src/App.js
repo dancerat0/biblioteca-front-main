@@ -8,6 +8,8 @@ import ListaAutor from './paginas/ListaAutor';
 import ListaCategoria from './paginas/ListaCategoria';
 import ListaEditora from "./paginas/ListaEditora";
 import FormEditora from "./paginas/FormEditora";
+import ListaUsuario from "./paginas/ListaUsuario";
+import FormUsuario from "./paginas/FormUsuario";
 
 function App() {
   return (
@@ -29,6 +31,10 @@ function App() {
             <Route path='/listaeditora' element={<ListaEditora />} />
             <Route path='/cadastroeditora' element={<FormEditora />} />
             <Route path='/cadastroeditora/:id' element={<FormEditora />} />
+
+            <Route path="/listausuario" element={<ListaUsuario />} />
+            <Route path="/cadastrousuario" element={<FormUsuario />} />
+            <Route path="/cadastrousuario/:id" element={<FormUsuario />} />
 
             <Route path='*' element={<Home />} />
           </Routes>
