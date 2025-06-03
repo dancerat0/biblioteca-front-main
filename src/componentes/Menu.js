@@ -52,11 +52,8 @@ export default function Menu() {
                                         </a>
                                     </li>
                                     <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Something else here
+                                        <a className="dropdown-item" href="/listaeditora">
+                                            Editora
                                         </a>
                                     </li>
                                 </ul>
