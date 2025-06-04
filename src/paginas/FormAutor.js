@@ -29,18 +29,24 @@ export default function FormAutor() {
     }
 
     const alterar = async () => {
-        //montar o json do body com todos os campos que precisam ser enviados
         let body = {
-            "nomeautor": nomeautor,
-            "nascimento": nascimento,
-            "biografia": biografia,
-            "nacionalidade": nacionalidade,
-            "foto": foto
+        "titulo": titulo,
+        "edicao": edicao,
+        "paginas": paginas,
+        "publicacao": publicacao,
+        "foto": foto,
+        "localizacao": localizacao,
+        "resumo": resumo,
+        "ativo": ativo,
+        "condicaofisica": condicaofisica,
+        "emprestado": emprestado,
+        "ideditora": ideditora,
+        "idcategoria": idcategoria
         };
 
-        await axios.put(`http://localhost:4000/autor/${id}`, body);
+        await axios.put(`http://localhost:4000/livro/${id}`, body);
         voltar();
-    }
+    };
 
     const inserir = async () => {
         let body = {

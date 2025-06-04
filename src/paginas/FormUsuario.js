@@ -6,7 +6,6 @@ import TituloCadastro from "../componentes/TituloCadastro";
 export default function FormUsuario() {
     const navigate = useNavigate();
     const { id } = useParams();
-
     const [nome, setNome] = useState('');
     const [cpf, setCpf] = useState('');
     const [email, setEmail] = useState('');
@@ -102,7 +101,7 @@ export default function FormUsuario() {
                 <div className="mb-3">
                     <label className="form-label">Nascimento</label>
                     <input
-                        type="text"
+                        type="date"
                         className="form-control"
                         value={nascimento}
                         onChange={(e) => setNascimento(e.target.value)}
